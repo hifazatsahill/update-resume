@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(4, 3, 2);
+}
+.main-content{
+    min-height: 100%;
+    width: 80%;
+    margin: 4rem auto;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #5b4e97;
+}
+.right-section{
+    grid-column: span 5;
+    background-color: rgb(241, 246, 241);
+    height: 100%;
+}
+.left-content{
+    padding: 2rem 3rem;
+}
+.profile{
+    width: 100%;
+    border-bottom: 1px solid rgb(7, 18, 50);
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid rgb(31, 12, 78);
+    padding-bottom: 1.5rem 0;
+}
+.name{
+    font-size: 2rem ;
+    color: rgb(248, 249, 248);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.2rem 0;
+}
+.sub-para{
+    font-size: 1.2rem;
+    color: rgb(209, 207, 207);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1.2rem 0;
+}
+.main-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: aliceblue;
+    padding-top: 1rem;
+}
+.contact-info ul{
+    padding: 1rem 0;
+}
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: rgb(174, 174, 174);
+}
+.contact-info ul li i{
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    color: rgb(10, 17, 100);
+}
+.skills-section ul{
+    padding-top: 2rem;
+}
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0;
+}
+.progress-bar{
+    width: 100%;
+    height: .4rem;
+    background-color: rgb(62, 62, 80);
+    position: relative;
+    border-radius: 12px;
+}
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+.js-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #605e61;
+}
+.js-progress{
+    width: 70%;
+}
+.ts-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #807f81;
+}
+.ts-progress{
+    width: 65%;
+}
+.html-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #918c94;
+}
+.html-progress{
+    width: 70%;
+}
+.css-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #838085;
+}
+.css-progress{
+    width: 80%;
+}
+.tl-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #a09da3;
+}
+.tl-progress{
+    width: 70%;
+}
+.node-progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #a09da3;
+}
+.node-progress{
+    width: 40%;
+}
+.skill title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+}
+.sub-title{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+}
+.sub-para{
+    color: aliceblue;
+    padding: .4rem 0;
+}
+.reference-section li{
+    color: antiquewhite;
+    padding: .2rem 0;
+}
+.right-section li i{
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    color: #2f2a42;
+}
+.right-main-content{
+    padding: 1rem 1rem;
+}
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2f2a42;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+.right-title::after{
+    content: "";
+    width: 60%;
+    height: .2rem;
+    background-color: #5b4e97;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.para{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    color: #0c0b0c;
+}
+.experience{
+    padding: .2rem;
+}
+.sect{
+    padding-bottom: 2rem;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #3aafee;
+    text-transform: uppercase;
+}
+.tl-content{
+    border-left: 1px solid rgb(209, 207, 207);
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.tl-content::before{
+    content: "";
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background-color: rgb(133, 173, 219);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+/* secreen resolution */
+@media screen and (max-width:823px){
+    .right-title::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .right-title::after{
+        width: 30%;
+    }
+}
